@@ -1,3 +1,5 @@
 fastpi
 uvicorn
 pydantic
+sqlalchemy
+aiosqlite
