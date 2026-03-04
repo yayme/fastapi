@@ -19,6 +19,12 @@ Base.metadata.create_all(bind=engine)
 app =FastAPI()
 
 from pydantic import BaseModel
+class Task(BaseModel):
+    id: int
+    name: str
+    deadline: str
+
+
 
 @app.post('/tasks/')
 
